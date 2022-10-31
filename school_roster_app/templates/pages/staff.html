@@ -1,0 +1,12 @@
+<!-- school_roster_app/templates/pages/staff.html -->
+<html>
+  <head>
+    <title>Staff Page</title>
+  </head>
+  <body>
+    <h2>{{school_name}} Staff</h2>
+    <ul>
+      {% for emp in school_staff %}
+        <li><a href= "{{emp.employee_id}}">Name: {{emp.name}}, ID: {{emp.employee_id}}</a></li>
+     {% endfor %}
+    </ul>

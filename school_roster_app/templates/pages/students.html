@@ -1,0 +1,12 @@
+<!-- school_roster_app/templates/pages/students.html -->
+<html>
+  <head>
+    <title>Students Page</title>
+  </head>
+  <body>
+    <h2>{{school_name}} Students</h2>
+    <ul>
+      {% for stud in school_students %}
+        <li><a href = '{{stud.school_id}}/'>Name: {{stud.name}}, ID: {{stud.school_id}}</a></li>
+    {% endfor %}
+    </ul>
